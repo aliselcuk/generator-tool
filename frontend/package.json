@@ -1,7 +1,7 @@
 {
     "name": "generator-tool",
     "version": "0.0.1",
-    "main": "dist/generator.umd.js",
+    "main": "src/main.js",
     "files": [
         "dist/*"
     ],

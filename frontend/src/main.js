@@ -1,9 +1,10 @@
 import components from './app/components'
 import routes from './app/routes'
 
-const superv = window.superv
+export default {
+  install(Vue, { superv }) {
 
-superv.router().addRoutes(routes)
-superv.registerComponents(components)
-
-export default {}
+    superv.router().addRoutes(routes)
+    superv.registerComponents(components)
+  },
+}

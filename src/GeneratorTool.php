@@ -20,4 +20,6 @@ class GeneratorTool extends Tool
     {
         Nav::building('acp.platform', 'Generator', 'sv/tools/generator');
     }
+
+
 }

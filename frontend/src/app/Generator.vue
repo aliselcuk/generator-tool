@@ -1,22 +1,29 @@
 <template>
-<div class="text-copy-primary">
-Generator
-<!--  <sv-page :meta="meta">-->
-<!--    {{ response }}-->
-<!--    dfdf-->
-<!--  </sv-page>-->
-</div>
+  <div class="sv-page  flex-grow">
+    <sv-page-header title="Resource Generator"></sv-page-header>
+
+    <div class="sv-page-body flex flex-col md:flex-row p-0 sm:p-2 sm:pb-4 md:p-4 md:pb-12"  >
+      <sv-card class="w-full"   title="Generate">
+
+        <template slot="body">
+          {{ response }}
+        </template>
+      </sv-card>
+    </div>
+  </div>
 </template>
 
 <script>
+import { SvPageHeader } from 'superv-js'
+
 export default {
   name: 'Generator',
-
+  components: { SvPageHeader },
   data() {
     return {
       response: null,
-      meta:  {
-        title: 'Gen Title',
+      meta: {
+        title: 'Generator',
       }
     }
   },
